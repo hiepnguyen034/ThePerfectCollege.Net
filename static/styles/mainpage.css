@@ -1,0 +1,65 @@
+
+h1 {
+
+    background-color: red;
+    color: white;
+
+    font-size: 36px;
+
+    text-align: center;
+
+    opacity: 0.8
+}
+
+p {
+    font-family: verdana;
+    font-size: 30px;
+
+    text-align: justify;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    opacity: 0.8;
+}
+
+#button{
+
+    background-color:blue;
+
+    border-radius: 20px;
+
+}
+
+a {
+
+    color: white;
+
+    font-size: 72px;
+
+    font-style: bold;
+
+    text-align: center;
+
+    text-decoration: none;
+
+
+}
+
+body{
+
+    background-image: url({{ url_for('static', filename='Images/Campus.jpg') }});
+
+}
+
+ul {
+
+     background-color:white;
+
+     opacity: 0.8;
+
+     font-size: 30px;
+
+
+}

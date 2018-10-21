@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="block1">
+
+<h1 class="white">Tell me a college you like and I will suggest a few schools that you will also like</h1>
+
+<p class="black">Please write the school's full name (e.x. "Harvard University" intead of "Harvard", or 'Columbia University in the City of New York' instead of
+'Columbia') </p>
+
+<form action='/recommend/result' method='post'>
+    <input name="text">
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+{% endblock %}

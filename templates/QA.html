@@ -1,0 +1,59 @@
+
+{% extends "layout.html" %}
+{% block body %}
+<div class="block1">
+<h1 class="white">We need to know a little bit more about you</h1>
+
+<div class="big-container">
+<form action='/QA/result' method='post'>
+
+<div class="description">
+<h1 ></h1>
+<p>We have extracted data from thousands and thousands of school to assist you in choosing the perfect college! </p>
+
+
+</div>
+<div class="location">
+<h1 class='white'>Which type of location do you prefer?</h1>
+<select class="location" name="location">
+<option value="city">city</option>
+<option value="suburban">suburban</option>
+<option value="rural">rural</option>
+</select>
+</div>
+
+</div>
+<div class="major">
+<h1 class ='white'>What is your intended major?</h1>
+<select class="major" name="major">
+<option value="cs">Computer Science</option>
+<option value="math">Math</option>
+<option value="ss">Social Studies</option>
+<option value="el">English & Literature</option>
+<option value="engin">Engineering</option>
+<option value="buss">Business & Finance</option>
+<option value="bio">Biology</option>
+</select>
+</div>
+
+
+</div>
+<div class="sat">
+<h1 class="white">What is your SAT range?</h1>
+<select class="sat" name="sat">
+<option value="800-1200">800-1200</option>
+<option value="1200-1400">1200-1400</option>
+<option value="1400-1600">1400-1600</option>
+</select>
+</div>
+
+
+
+<input class="submit" type ='submit' value="submit">
+</form>
+</div>
+<div class="description">
+<p>Fun fact: The word “college” comes from the Latin “collegium” which means community or society.</p>
+</div>
+
+{% endblock %}

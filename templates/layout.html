@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title>Website</title>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:bold);
+body{
+    text-align: center;
+    background-image:url('/static/Images/Campus_Book.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.black{
+  font-family: 'Amatic SC', cursive;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+a{
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    color: #000080;
+    font-size: 2.5em;  
+}
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
+    color: #8ac640;
+    font-size: 2.5em;
+}
+h2{
+	font-family: 'Amatic SC', cursive;
+	color: #8ac640;
+}
+.white{
+	color: #D2691E;
+	font-size: 55px;
+	font-weight: 800;
+	margin-top: 10px;
+}
+image{
+	height: 50px;
+	width: auto;
+}
+.submit{
+	background-color: #A9A9A9;
+	color: #ffffff;
+	font-size: 21px;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border: 1px solid #A9A9A9;
+	padding: 10px 20px 11px;
+	text-shadow: 1px 1px #A9A9A9;
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em;
+  position: relative;
+  margin: 50px 0 0 0
+}
+.try{
+	text-decoration: none;
+	padding: 12px 25px;
+	display: inline-block;
+	background-color: #A9A9A9;
+	color: #ffffff;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	font-family: 'Amatic SC', cursive;
+	width: 250px;
+	font-size: 2em;
+}
+.meal-container{
+	margin: 15px;
+	overflow: hidden;
+}
+.meal{
+	background-color: #779126;
+	background: transparent;
+	font-size: 14px;
+	height: 29px;
+	padding: 5px;
+	width: 268px;
+}
+select.meal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+select.meal:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+select{
+	background-color: white;
+  	border: thin solid blue;
+  	border-radius: 4px;
+  	display: inline-block;
+  	font: inherit;
+  	line-height: 1.5em;
+  	padding: 0.5em 3.5em 0.5em 1em;
+  	/* reset */
+  	margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.description{
+	width: 500px;
+	margin: 0 auto;
+}
+.description h1{
+	margin-bottom: 10px;
+}
+.description p {
+	font-family: 'Ubuntu';
+	font-size: 17px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.display{
+	background:rgba(255,255,255, 0.5);
+	width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+}
+.nutrition_facts{
+	width: 400px;
+	margin: 0 auto;
+}
+</style>
+
+</head>
+<body>
+ {% block body %}{% endblock %}
+
+</body>
+</html>
